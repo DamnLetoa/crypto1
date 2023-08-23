@@ -1,0 +1,66 @@
+#services{
+    margin-top: 10rem;
+}
+#services h1{
+    font-size: 4rem;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    padding: 40px 0;
+  }
+  
+  .service-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .service-item {
+    width: 900px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .big-image {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('../images/crypto.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: -25rem;
+  }
+  .icon img {
+    width: 70px;
+    height: 70px;
+  }
+  
+
+  
+
+  @media screen and (max-width: 1008px) {
+    .service-row {
+      flex-wrap: wrap;
+    }
+  
+    .service-item {
+      width: 100%;
+      max-width: 300px; /* Adjust the max-width as needed */
+      margin-bottom: 20px;
+    }
+
+    .big-image {
+        width: 200px; /* Adjust the width as needed */
+        height: 200px; /* Adjust the height as needed */
+        background-image: url('../images/crypto.png');
+        background-position: center;
+        background-size: cover;
+        display: none;
+      }
+  }

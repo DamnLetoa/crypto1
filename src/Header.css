@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+   background-color: black;
+   color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    height: 50px;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    font-weight: 900;
+    font-family: 'Lilita One', cursive;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .logo{
+    font-weight: 900;
+    font-size: 3rem;
+    position: fixed;
+  }
+  
+  #navigation {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .nav-list li {
+    margin-right: 50px;
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .discord-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  margin-top: 10px;
+  }
+
+.discord-icon{
+  position: fixed;
+  right: 6rem;
+  margin-left: 120px;
+}
+
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+  .logo{
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+    .navigation ul {
+      margin-top: 20px;
+    }
+    
+    .navigation li {
+      margin-right: 10px;
+    }
+    .discord-icon{
+      position: fixed;
+      bottom: 0;
+      margin-left: 120px;
+      right: 2rem;
+    }
+  }

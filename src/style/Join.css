@@ -1,0 +1,46 @@
+#join{
+    font-size: 3rem;
+    margin-top: 20rem;
+    height: 600px;
+}
+
+#joinH1{
+margin-top: -60px;
+}
+#join p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+ font-size: 1.5rem;   
+ margin-top: -50px;
+}
+
+#join button{
+    border-radius: 20px; /* Adjust the value to control the roundness */
+    background-color: #f44336; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Set the padding to create some space around the text */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    width: 200px;
+    height: 50px;
+    background: rgb(120,17,68);
+    background: linear-gradient(90deg, rgba(120,17,68,1) 10%, rgba(117,17,100,1) 24%, rgba(95,17,112,1) 33%, rgba(82,16,114,1) 42%, rgba(80,16,116,1) 48%, rgba(70,15,114,1) 53%, rgba(54,16,107,1) 57%, rgba(46,14,99,1) 60%, rgba(45,15,107,1) 63%, rgba(36,12,97,1) 68%, rgba(28,15,97,1) 82%, rgba(13,11,75,1) 93%);
+    height: 60px;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+#pics img{
+    width: 400px;
+    height: 400px;
+}
+@media screen and (max-width: 1008px) {
+    #pics{
+        margin-top: 20px;
+    }
+    #pics img{
+        width: 100px;
+        height: 100px;
+    }
+}

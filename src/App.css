@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+
+}
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Lilita One', cursive;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+/*Containers voor de tekst */
+#container1{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 39%, rgb(59, 8, 104) 100%);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+align-items: center;
+display: flex;
+justify-content: center;
+
+}
+#container1 h1{
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 1008px) {
+#container1 h1{
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 100px;
+}
+}
+
+
+
+#container2{
+  
+}
+
+#latestCoins{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: -5rem;
+  font-family: 'Lilita One', cursive;
+}
+
+.coin-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Lilita One', cursive;
+}
+
+
+
+
+#latestCoins img{
+width: 100px;
+height: 100px;
+text-align: center;
+
+}
+
+
+.coin-table{
+  display: flex;
+  justify-content: center;
+
+}
+#market h1{
+  font-size: 4rem;
+}
+#market{
+  margin-top: 20rem;
+}
+
+.coin-table__table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+
+.coin-table__table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.coin-table__table th {
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+
+}
+
+#ths{
+  background: rgb(120,17,68);
+  background: linear-gradient(90deg, rgba(120,17,68,1) 10%, rgba(117,17,100,1) 24%, rgba(95,17,112,1) 33%, rgba(82,16,114,1) 42%, rgba(80,16,116,1) 48%, rgba(70,15,114,1) 53%, rgba(54,16,107,1) 57%, rgba(46,14,99,1) 60%, rgba(45,15,107,1) 63%, rgba(36,12,97,1) 68%, rgba(28,15,97,1) 82%, rgba(13,11,75,1) 93%);
+  height: 60px;
+}
+
+.coin-table__table tr:last-child td {
+  border-bottom: none;
+}
+
+.coin-table__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+
+#navButton{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 900;
+  margin-left: 10px;
+  background: rgb(120,17,68);
+  background: linear-gradient(90deg, rgba(120,17,68,1) 10%, rgba(117,17,100,1) 24%, rgba(95,17,112,1) 33%, rgba(82,16,114,1) 42%, rgba(80,16,116,1) 48%, rgba(70,15,114,1) 53%, rgba(54,16,107,1) 57%, rgba(46,14,99,1) 60%, rgba(45,15,107,1) 63%, rgba(36,12,97,1) 68%, rgba(28,15,97,1) 82%, rgba(13,11,75,1) 93%);
+  border: none;
+  color: white;
+}
+
+
+#anim1{
+  background: url('./images/bitcoin.png');
+  animation: slide 2s infinite;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#anim2{
+  background: url('./images/ethereum.png');
+  animation: slide 2s infinite;
+
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+#anim1 #anim2.animate {
+  transform: translateY(200px); /* Set the translation for the animation */
+  transition: transform 1s ease-in-out; /* Define the transition properties */
+  animation: moveUpDown 2s infinite alternate; /* Use the animation property to continuously repeat the animation */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
